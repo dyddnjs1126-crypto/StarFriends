@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Friends Zodiac Diary</title>
+  <link rel="stylesheet" href="./css/PP_style.css">
+  <link rel="icon" type="image/png\\=" sizes="32x32" href="../images/favicon.png">
+</head>
+<body>
+
+  <!-- 고정 헤더 -->
+  <header class="product-header" aria-label="Star Friends 상품 페이지 헤더">
+    <a href="../index.html" class="product-header__logo" aria-label="메인 홈으로 이동">
+      <img src="../images/LOGO.png" alt="Star Friends">
+    </a>
+  </header>
+
+  <main class="product-page">
+
+    <!-- 상품 구매 영역 -->
+    <section class="product-buy" aria-label="Star Friends 별자리 다이어리 구매 영역">
+
+      <!-- 상품 이미지 갤러리 -->
+      <div class="product-gallery">
+        <div class="main-product-img">
+          <img id="mainProductImage" src="../images/Diary_1.png" alt="Aries Diary">
+        </div>
+
+        <div class="selected-name" id="selectedName">Aries Diary</div>
+
+        <div class="thumb-slider" aria-label="다이어리 이미지 선택 슬라이드">
+          <button type="button" class="thumb-btn prev" aria-label="이전 이미지">‹</button>
+
+          <div class="thumb-window">
+            <ul class="thumb-list" id="thumbList">
+              <li class="active" data-index="0" data-img="../images/Diary_1.png" data-name="Aries Diary">
+                <img src="../images/Diary_1.png" alt="Aries Diary">
+              </li>
+              <li data-index="1" data-img="../images/Diary_2.png" data-name="Taurus Diary">
+                <img src="../images/Diary_2.png" alt="Taurus Diary">
+              </li>
+              <li data-index="2" data-img="../images/Diary_3.png" data-name="Gemini Diary">
+                <img src="../images/Diary_3.png" alt="Gemini Diary">
+              </li>
+              <li data-index="3" data-img="../images/Diary_4.png" data-name="Cancer Diary">
+                <img src="../images/Diary_4.png" alt="Cancer Diary">
+              </li>
+              <li data-index="4" data-img="../images/Diary_5.png" data-name="Leo Diary">
+                <img src="../images/Diary_5.png" alt="Leo Diary">
+              </li>
+              <li data-index="5" data-img="../images/Diary_6.png" data-name="Virgo Diary">
+                <img src="../images/Diary_6.png" alt="Virgo Diary">
+              </li>
+              <li data-index="6" data-img="../images/Diary_7.png" data-name="Libra Diary">
+                <img src="../images/Diary_7.png" alt="Libra Diary">
+              </li>
+              <li data-index="7" data-img="../images/Diary_8.png" data-name="Scorpio Diary">
+                <img src="../images/Diary_8.png" alt="Scorpio Diary">
+              </li>
+              <li data-index="8" data-img="../images/Diary_9.png" data-name="Sagittarius Diary">
+                <img src="../images/Diary_9.png" alt="Sagittarius Diary">
+              </li>
+              <li data-index="9" data-img="../images/Diary_10.png" data-name="Capricorn Diary">
+                <img src="../images/Diary_10.png" alt="Capricorn Diary">
+              </li>
+              <li data-index="10" data-img="../images/Diary_11.png" data-name="Aquarius Diary">
+                <img src="../images/Diary_11.png" alt="Aquarius Diary">
+              </li>
+              <li data-index="11" data-img="../images/Diary_12.png" data-name="Pisces Diary">
+                <img src="../images/Diary_12.png" alt="Pisces Diary">
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="thumb-btn next" aria-label="다음 이미지">›</button>
+        </div>
+      </div>
+
+      <!-- 상품 정보 -->
+      <aside class="product-info" aria-label="상품 정보 및 구매 옵션">
+        <span class="category">STAR FRIENDS DIARY</span>
+        <h1>Star Friends 별자리 다이어리</h1>
+        <p class="summary">
+          12가지 별자리 캐릭터와 파스텔 컬러로 완성한 감성 다이어리 세트
+        </p>
+
+        <div class="price-box">
+          <span class="sale">10%</span>
+          <strong class="price">28,900원</strong>
+          <span class="origin">31,000원</span>
+        </div>
+
+        <div class="option-box">
+          <label for="zodiac">별자리 선택</label>
+          <select id="zodiac">
+            <option value="">옵션을 선택해주세요</option>
+            <option value="0">01 양자리 Aries</option>
+            <option value="1">02 황소자리 Taurus</option>
+            <option value="2">03 쌍둥이자리 Gemini</option>
+            <option value="3">04 게자리 Cancer</option>
+            <option value="4">05 사자자리 Leo</option>
+            <option value="5">06 처녀자리 Virgo</option>
+            <option value="6">07 천칭자리 Libra</option>
+            <option value="7">08 전갈자리 Scorpio</option>
+            <option value="8">09 사수자리 Sagittarius</option>
+            <option value="9">10 염소자리 Capricorn</option>
+            <option value="10">11 물병자리 Aquarius</option>
+            <option value="11">12 물고기자리 Pisces</option>
+          </select>
+        </div>
+
+        <div class="qty-box">
+          <span>수량</span>
+          <div class="qty-control">
+            <button type="button" class="minus" aria-label="수량 감소">-</button>
+            <input type="number" value="1" min="1" aria-label="수량 입력">
+            <button type="button" class="plus" aria-label="수량 증가">+</button>
+          </div>
+        </div>
+
+        <div class="total-box">
+          <span>총 상품금액</span>
+          <strong id="totalPrice">28,900원</strong>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="cart-btn">장바구니</button>
+          <button type="button" class="buy-btn">구매하기</button>
+        </div>
+
+        <ul class="notice-list">
+          <li>배송비 3,000원 / 50,000원 이상 무료배송</li>
+          <li>제작 및 출고까지 2~4일 정도 소요될 수 있습니다.</li>
+          <li>옵션 선택 후 교환 및 반품이 어려울 수 있습니다.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- 상세페이지 이미지 영역 -->
+    <section class="detail-image-section" aria-label="상세페이지 이미지">
+      <img src="../images/page1.jpg" alt="Star Friends 상세페이지1">
+      <img src="../images/page2.jpg" alt="Star Friends 상세페이지1">
+      <img src="../images/page3.jpg" alt="Star Friends 상세페이지1">
+      <img src="../images/page4.jpg" alt="Star Friends 상세페이지1">
+    </section>
+  </main>
+
+  <!-- 홈페이지와 동일한 분위기의 푸터 -->
+  <footer class="footer" aria-label="Star Friends 푸터">
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-logo" aria-label="메인 홈으로 이동">
+        <img src="../images/LOGO.png" alt="Star Friends">
+      </a>
+
+      <ul class="footer-menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../index.html#section1">ABOUT</a></li>
+        <li><a href="../index.html#characters">CHARACTERS</a></li>
+        <li><a href="../index.html#diary-preview">DIARY</a></li>
+        <li><a href="../index.html#goods">GOODS</a></li>
+      </ul>
+
+      <p class="footer-text">12 Zodiac Character Diary Brand</p>
+      <p class="copyright">© 2026 Star Friends. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 맨 위로 이동 버튼 -->
+  <button type="button" class="top-button" id="topButton" aria-label="맨 위로 이동">TOP</button>
+
+  <script src="./js/jquery-4.0.0.min.js"></script>
+
+  <script src="./js/PP_script.js"></script>
+</body>
+</html>
